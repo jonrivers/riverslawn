@@ -1,0 +1,31 @@
+.section-cta {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: url("../img/cta.jpg") center center no-repeat;
+  background-size: cover;
+  transition: all 0.3s ease;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(-132deg, rgba(0, 48, 3, 0.7) 0%, rgba(6, 36, 20, 0.9) 100%);
+    opacity: 0.75;
+  }
+
+  .cta-content {
+    color: #fff;
+    position: relative;
+
+    h2,
+    p {
+      color: #fff;
+    }
+  }
+
+}
