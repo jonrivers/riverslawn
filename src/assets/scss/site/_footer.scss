@@ -1,0 +1,13 @@
+.site-footer {
+  background-color: rgba(5,61,35,0.10);
+  padding-top: 2.5vh;
+  padding-bottom: 2.5vh;
+  @include breakpoint(small) {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+  }
+  @include breakpoint(medium) {
+    padding-top: 7.5vh;
+    padding-bottom: 7.5vh;
+  }
+}

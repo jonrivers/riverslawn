@@ -1,0 +1,97 @@
+.site-header {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: url("../img/hero.jpg") center center no-repeat;
+  background-size: cover;
+  transition: all 0.3s ease;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(-132deg, rgba(0,48,3,0.7) 0%, rgba(6,36,20,0.9) 100%);
+    opacity: 0.75;
+  }
+
+  .site-nav {
+    padding: 1rem;
+    position: relative;
+
+    .site-logo {
+      img {
+        width: 100%;
+      }
+    }
+
+    .nav-menu {
+      ul {
+        display: block;
+        font-family: $header-font-family;
+        font-size: 1.25rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin: 0;
+        float: right;
+
+        li {
+          list-style-type: none;
+          display: inline-block;
+          color: #fff;
+          width: auto;
+
+          a {
+            color: #fff;
+            padding: 1rem;
+          }
+        }
+      }
+    }
+  }
+
+  .site-hero {
+    color: #fff;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    position: relative;
+    text-align: center;
+    z-index: 100;
+    @include breakpoint(medium) {
+      padding-top: 12.5vh;
+      padding-bottom: 12.5vh;
+    }
+    @include breakpoint(large) {
+      padding-top: 15vh;
+      padding-bottom: 15vh;
+    }
+
+    h1 {
+      color: #f1f1f1;
+      font-size: 2rem;
+      line-height: 1.1;
+      @include breakpoint(medium) {
+        font-size: 4rem;
+      }
+      @include breakpoint(large) {
+        font-size: 5rem;
+      }
+    }
+
+    p {
+      @include breakpoint(medium) {
+        font-size: 1.75rem;
+        margin: 2rem auto;
+      }
+    }
+
+    .button {
+      width: 100%;
+    }
+  }
+
+
+}

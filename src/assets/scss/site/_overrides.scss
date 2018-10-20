@@ -1,0 +1,20 @@
+h1,h2,h3,h4,h5,h6 {
+  text-transform: uppercase;
+}
+
+.button {
+  font-weight: bold;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  opacity: 0.84;
+  background-image: linear-gradient(-269deg, #F98A23 2%, #F83600 100%);
+  @include breakpoint(medium) {
+    font-size: 1.75rem;
+  }
+}
+
+.button:hover {
+  background-image: linear-gradient(-269deg, #F83600 100%, #F98A23 2% );
+  transition: all 0.3s;
+}

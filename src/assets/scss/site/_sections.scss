@@ -1,0 +1,92 @@
+.section {
+  padding-top: 2.5vh;
+  padding-bottom: 2.5vh;
+  @include breakpoint(small) {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+  }
+  @include breakpoint(medium) {
+    padding-top: 7.5vh;
+    padding-bottom: 7.5vh;
+  }
+
+  &-header {
+    margin: 0 auto;
+    text-align: center;
+
+    h2 {
+      color: $primary-color;
+      font-size: 2rem;
+      line-height: 1.1;
+      @include breakpoint(medium) {
+        font-size: 3rem;
+      }
+      @include breakpoint(large) {
+        font-size: 4.5rem;
+      }
+    }
+
+    p {
+      @include breakpoint(medium) {
+        font-size: 1.75rem;
+        margin: 2rem auto 4rem;
+      }
+    }
+  }
+
+
+  &-home-cards,
+  &-process,
+  &-promise {
+    background-color: rgba(5,61,35,0.10);
+
+    &-header {
+      h2 {
+        color: #053D23;
+      }
+    }
+  }
+
+  &-shortcuts {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  &-intro {
+    padding-top: 3vh;
+    padding-bottom: 2vh;
+    @include breakpoint(medium) {
+      padding-top: 6vh;
+      padding-bottom: 6vh;
+    }
+
+  }
+
+
+  &-introText {
+    margin: 0 auto;
+    text-align: center;
+
+    h2 {
+      color: $primary-color;
+      font-size: 2rem;
+      line-height: 1.1;
+      @include breakpoint(medium) {
+        font-size: 3rem;
+      }
+      @include breakpoint(large) {
+        font-size: 4.5rem;
+      }
+    }
+
+    p {
+      text-align: left;
+      @include breakpoint(medium) {
+        font-size: 1.75rem;
+        margin: 2rem auto 0;
+      }
+    }
+  }
+
+}
+
